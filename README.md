@@ -9,7 +9,7 @@ Running
 
 The project provides both a Gradle and a Maven script for getting started.
 
-##Maven
+## Maven
 ```
 mvn spring-boot:run
 ```
