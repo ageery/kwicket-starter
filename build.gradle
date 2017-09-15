@@ -1,0 +1,44 @@
+buildscript {
+    ext {
+        springBootVersion = '1.5.7.RELEASE'
+        kotlinVersion = '1.1.4-3'
+    }
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:${kotlinVersion}")
+        classpath("org.jetbrains.kotlin:kotlin-allopen:$kotlinVersion")
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+
+apply plugin: 'kotlin'
+apply plugin: 'kotlin-spring'
+apply plugin: 'org.springframework.boot'
+
+group 'org.kwicket.kwicket-starter'
+version '0.0.1-SNAPSHOT'
+sourceCompatibility = 1.8
+sourceSets.main.resources.srcDirs += "src/main/kotlin"
+
+ext {
+    wicketVersion = '8.0.0-M7'
+    wicketBootstrapVersion = '2.0.0-M6'
+    kWicketVersion='0.0.1'
+}
+
+repositories {
+    mavenCentral()
+    maven {
+        url 'https://dl.bintray.com/ageery/maven'
+    }
+}
+
+dependencies {
+    compile('org.springframework.boot:spring-boot-starter-web')
+    compile("org.apache.wicket:wicket-core:${wicketVersion}")
+    compile("de.agilecoders.wicket:wicket-bootstrap-core:${wicketBootstrapVersion}")
+    compile("org.kwicket:kwicket-wicket-core:${kWicketVersion}")
+    compile("org.kwicket:kwicket-wicket-bootstrap-core:${kWicketVersion}")
+}
