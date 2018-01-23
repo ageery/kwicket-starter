@@ -6,8 +6,8 @@ import org.apache.wicket.RuntimeConfigurationType
 import org.kwicket.agilecoders.enableBootstrap
 import org.kwicket.wicket.core.protocol.http.KWebApplication
 
-class StarterWebApplication(configurationType: RuntimeConfigurationType)
-    : KWebApplication(configurationType = configurationType) {
+class StarterWebApplication(configurationType: RuntimeConfigurationType) :
+    KWebApplication(configurationType = configurationType) {
 
     override fun getHomePage() = HomePage::class.java
 

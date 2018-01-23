@@ -1,24 +1,24 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>gov.kwicket.starter</groupId>
     <artifactId>kwicket</artifactId>
-    <version>0.0.2-SNAPSHOT</version>
+    <version>0.0.2</version>
     <packaging>jar</packaging>
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.5.7.RELEASE</version>
+        <version>1.5.9.RELEASE</version>
     </parent>
     <name>kwicket-starter</name>
     <description>kWicket starter project</description>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <kotlinVersion>1.1.4-3</kotlinVersion>
-        <wicketVersion>8.0.0-M7</wicketVersion>
-        <wicketBootstrapVersion>2.0.0-M6</wicketBootstrapVersion>
-        <kWicketVersion>0.0.1</kWicketVersion>
+        <kotlinVersion>1.2.20</kotlinVersion>
+        <wicketVersion>8.0.0-M8</wicketVersion>
+        <wicketBootstrapVersion>2.0.0-M7</wicketBootstrapVersion>
+        <kWicketVersion>0.0.2</kWicketVersion>
     </properties>
     <repositories>
         <repository>

@@ -1,7 +1,7 @@
 buildscript {
     ext {
-        springBootVersion = '1.5.7.RELEASE'
-        kotlinVersion = '1.1.4-3'
+        springBootVersion = '1.5.9.RELEASE'
+        kotlinVersion = '1.2.20'
     }
     repositories {
         mavenCentral()
@@ -18,21 +18,19 @@ apply plugin: 'kotlin-spring'
 apply plugin: 'org.springframework.boot'
 
 group 'org.kwicket.kwicket-starter'
-version '0.0.2-SNAPSHOT'
+version '0.0.2'
 sourceCompatibility = 1.8
 sourceSets.main.resources.srcDirs += "src/main/kotlin"
 
 ext {
-    wicketVersion = '8.0.0-M7'
-    wicketBootstrapVersion = '2.0.0-M6'
-    kWicketVersion='0.0.1'
+    wicketVersion = '8.0.0-M8'
+    wicketBootstrapVersion = '2.0.0-M7'
+    kWicketVersion = '0.0.2'
 }
 
 repositories {
     mavenCentral()
-    maven {
-        url 'https://dl.bintray.com/ageery/maven'
-    }
+    maven { url 'https://dl.bintray.com/ageery/maven' }
 }
 
 dependencies {
